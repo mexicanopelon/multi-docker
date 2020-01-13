@@ -17,7 +17,7 @@ after_success:
   # Login to the docker CLI
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOKER_ID" --password-stdin
 
-  # Take those images and push the to Docker Hub.
+  # Take those images and push the to Docker Hub
   - docker push mexicanopelon/multi-client
   - docker push mexicanopelon/multi-nginx
   - docker push mexicanopelon/multi-server
